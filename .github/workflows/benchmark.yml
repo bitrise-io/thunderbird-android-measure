@@ -14,10 +14,11 @@ jobs:
     timeout-minutes: 90
 
     steps:
-      - name: Checkout THUNDERBIRD_17_0b4
-        uses: actions/checkout@v4
-        with:
-          ref: THUNDERBIRD_17_0b4
+      - name: Checkout thunderbird-android @ b667b70e8d
+        uses: actions/checkout@v4                                                                                                                 
+        with:         
+          repository: thunderbird/thunderbird-android                                                                                             
+          ref: 6c32c95f9d09e5f28d88d7886536f3ae5889ed3c #THUNDERBIRD_17_0b4 
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
